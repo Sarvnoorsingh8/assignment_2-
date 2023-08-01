@@ -1,0 +1,435 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background: url('./img/pizzaimg4.webp') center/cover no-repeat;
+  color: #3a372bdb;
+  text-align: center;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 24px;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 280px);
+  background: url('./img/pizza_img_1st.jpg') center/cover no-repeat;
+  padding: 40px;
+}
+
+/* Pizza container styles */
+.pizza-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Pizza image styles */
+.pizza-image {
+  flex: 0 0 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.pizza-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.pizza-type-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Pizza details styles */
+.pizza-details {
+  flex: 0 0 50%;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Pizza size and type styles */
+.pizza-size,
+.pizza-type {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.pizza-size,
+.type-label {
+  margin-left: 10px;
+}
+
+
+
+.pizza-size input[type="radio"] + .size-label,
+.pizza-type input[type="radio"] + .type-label {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #f58642;
+  color: #fff;
+}
+
+.pizza-size input[type="radio"] + .pizza-size:hover,
+.pizza-type input[type="radio"] + .pizza-size:hover {
+  background-color: #ec7539;
+}
+
+.pizza-size input[type="radio"]:checked + .pizza-size,
+.pizza-type input[type="radio"]:checked + .pizza-size {
+  background-color: #ec7539;
+}
+
+/* Pizza toppings styles */
+.pizza-toppings {
+  margin-top: 20px;
+}
+
+.pizza-toppings input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #f58642;
+  border-radius: 5px;
+}
+
+.pizza-toppings input[type="text"]:focus {
+  outline: none;
+  border-color: #ec7539;
+}
+
+/* Pizza total styles */
+.pizza-total {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f58642;
+}
+
+/* Order buttons styles */
+button {
+  background-color: #f58642;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #ec7539;
+}
+
+button[type="reset"] {
+  background-color: #fff;
+  color: #f58642;
+  border: 2px solid #f58642;
+}
+
+button[type="reset"]:hover {
+  background-color: #f58642;
+  color: #fff;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background: url('./img/pizza-recipe.jpg') center/cover no-repeat;
+  color: #504343;
+  padding: 20px 0;
+}
+
+/* Pizza type image styles */
+.pizza-type>img:nth-child(1) {
+  max-height: 100px;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.pizza-type>img:nth-child(2) {
+  max-height: 100px;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.pizza-type>img:nth-child(3) {
+  max-height: 100px;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.pizza-type>img:nth-child(4) {
+  max-height: 100px;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.pizza-image>img:first-child {
+  max-width: 300px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+/* Custom pizza type label styles */
+.pizza-type {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.pizza-type img {
+  max-height: 100px;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.pizza-type::after {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pizza-type::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #f58642;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom pizza size button styles */
+.pizza-size input[type="radio"] {
+  display: none;
+}
+
+.pizza-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 2px solid #f58642;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f58642;
+  cursor: pointer;
+}
+
+/* Offer section styles */
+.offer {
+  display: flex;
+  align-items: center;
+}
+
+.offer div {
+  margin-right: 20px; /* Adjust the spacing between images */
+}
+
+.offer div:nth-child(2) {
+  margin-left: 9em; /* Adjust the spacing between images */
+}
+
+.offer img {
+  max-height: 400px; /* Set a maximum height for the images */
+  border-radius: 4px;
+  width: 350px;
+}
+
+/* Upper section styles */
+.upper {
+  display: flex;
+  align-items: center;
+}
+
+.upper div {
+  margin-right: 17px; /* Adjust the spacing between images */
+}
+
+.upper img {
+  max-height: 400px; /* Set a maximum height for the images */
+  border-radius: 4px;
+  min-width: 360px;
+}
+
+.upper div:nth-child(2) {
+  margin-left: 2em; /* Adjust the spacing between images */
+}
+
+.upper > p {
+  font-size: 18px;
+}
+
+/* Offers section styles */
+.offerss {
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+}
+
+.offerss p {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f58642;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens up to 768px wide */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  .pizza-container {
+    padding: 20px;
+  }
+
+  .pizza-image,
+  .pizza-details {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .pizza-type-display {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .pizza-type>img {
+    max-height: 80px;
+    margin-left: 0.5em;
+    border-radius: 4px;
+  }
+
+  .pizza-size,
+  .pizza-type {
+    margin-bottom: 5px;
+  }
+
+  .pizza-size input[type="radio"] + .size-label,
+  .pizza-type input[type="radio"] + .type-label {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .offer img {
+    max-height: 300px;
+    width: 250px;
+  }
+
+  .upper img {
+    max-height: 300px;
+    min-width: 280px;
+  }
+}
+
+/* For screens up to 576px wide */
+@media screen and (max-width: 576px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .pizza-container {
+    padding: 15px;
+  }
+
+  .pizza-image,
+  .pizza-details {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .pizza-image img,
+  .offer img,
+  .upper img {
+    max-width: 100%;
+  }
+
+  .pizza-type-display {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .pizza-type>img {
+    max-height: 60px;
+    margin-left: 0.5em;
+    border-radius: 4px;
+  }
+
+  .pizza-size input[type="radio"] + .size-label,
+  .pizza-type input[type="radio"] + .type-label {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .offer div:nth-child(2) {
+    margin-left: 1em;
+  }
+
+  .upper div:nth-child(2) {
+    margin-left: 1em;
+  }
+}

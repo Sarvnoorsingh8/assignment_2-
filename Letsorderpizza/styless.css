@@ -1,0 +1,53 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    color: #f5f6f7;
+    background-color: #1b1b32;
+  }
+  
+  /* About section styles */
+  .about-section {
+    padding: 50px;
+  }
+  
+  .section-title {
+    color: rgb(81, 146, 58);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+  }
+  
+  .about-section p {
+    margin-bottom: 20px;
+  }
+  
+  .chef-image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .restaurant-image {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .opening-hours {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .opening-hours .half, .opening-hours .im {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .opening-hours .half p, .opening-hours .im p {
+    margin: 10px 0;
+  }
+  
+
+  

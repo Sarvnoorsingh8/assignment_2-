@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZERA-ordering the slices</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="ordering">
+  <meta name="robots" content="noindex nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+
+    <h1>PIZZERA</h1>
+  
+  </header>
+  
+  <main> 
+
+
+    <div class="pizza-container">
+      <section class="upper">
+        <div class="pizza-image">
+        <img src="./img/pizza-recipe.jpg" alt="Pizza Image" id="pizza-img">
+        </div>
+     <p>HI! "Get Ready for Pizza Perfection - Your Tastebuds Will Thank You!"</p>
+        <div class="pizza-image">
+          <img src="./img/2ndjust.jpeg" alt="Pizza Image" id="pizza-img1">
+         </div>
+
+         
+       
+
+    </section>
+      <form action="#" form id="pizza-form" method="post">
+        <div class="pizza-details">
+          <h2>Choose Your Pizza Size</h2>
+          <label class="pizza-size">
+            <input type="radio" name="pizza-size" value="small" >
+            Small
+          </label>
+        <label class="pizza-size">
+            <input type="radio" name="pizza-size" value="medium" >
+            Medium
+          </label>
+          <label class="pizza-size">
+            <input type="radio" name="pizza-size" value="large" >
+            Large
+          </label>
+
+          <h2>Choose Your Pizza Type</h2>
+          <label class="pizza-type">
+            <input type="radio" name="pizza-type" value="cheese">
+            <img src="./img/cheese_pizza.jpg" alt="Cheese Pizza">
+            Cheese - $10.99
+          </label>
+          
+          <label class="pizza-type">
+            <input type="radio" name="pizza-type" value="pepperoni">
+            <img src="./img/pepperoni_pizza.jpg" alt="Pepperoni Pizza">
+            Pepperoni - $12.99
+          </label>
+          
+          <label class="pizza-type">
+            <input type="radio" name="pizza-type" value="mushroom">
+            <img src="./img/mushroom_pizza.jpg" alt="Mushroom Pizza">
+            Mushroom - $11.99
+          </label>
+          
+          <label class="pizza-type">
+            <input type="radio" name="pizza-type" value="olives">
+            <img src="./img/olives_pizza.jpeg" alt="Olives Pizza">
+            Olives - $13.99
+          </label>
+          
+
+          <div class="pizza-toppings">
+            <h2>Pizza Toppings</h2>
+            <input type="text" name="pizza-toppings" placeholder="Enter your pizza toppings">
+            <select id="referrer" name="referrer">
+              <option value=""> or ( select one)</option>
+              <option value="1">Garlic Honey</option>
+              <option value="2">Potato</option>
+              <option value="3">Caramalized onions</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+        </div>
+
+<div class="offerss">
+  <p>OUR BEST OFFERS</p>
+</div>
+
+<section class="offer">
+        <div>
+          <img src="./img/offer1.webp" alt="Olives Pizza">
+</div>
+<div>
+  <img src="./img/offer2.png" alt="Olives Pizza">
+</div>
+</section>
+
+
+<div>
+        <button type="submit">ADD TO CART</button>
+        <button type="reset" id="reset-btn">Reset</button>
+      </div>
+        <div class="pizza-total">
+          <h2>Total Price:</h2>
+          <p id="total-price">$0.00</p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 PIZZERA</p>
+  </footer>
+</body>
+</html>
